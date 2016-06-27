@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    padding: 20px;
+}
+[id^="post"]{
+    background: rgba(200, 228, 247, 0.64);
+    margin: 5px;
+}
+.post:first-child{
+    background: #32e677;
+    
+}
+.thumbnail {
+    position: relative;
+    width: 300px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.thumbnail img{
+    max-width: 100%;
+}
+.thumbnail:after{
+    position: absolute;
+    content: "";
+    display: block;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0.3;
+}
+h1{
+    position: relative;
+    display: table;
+    border: 2px solid;
+}
+h1:after, h1:before{
+    position: relative;
+    top: -20px;
+    content: "";
+    display: table-cell;
+    width: 30%;
+    border-bottom: 2px solid;
+}
+
+.head-img {
+    padding: 0px;
+    height: 100px;
+    width: 100px;
+    border: 10px solid #ddd;
+    border-radius: 50%;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background: white;
+    border: 1px solid;
+    box-shadow: 10px 10px 10px #ddd;
+}
+.box2{
+    width: 200px;
+    height: 200px;
+    background: white;
+    border: 1px solid;
+    box-shadow: 10px 10px 10px #ddd;
+    background-image: url(https://images.unsplash.com/photo-1464621922360-27f3bf0eca75?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=1b0aa3802706c803f1c2f261d761f584);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: content-box;
+}
+
+.smile-face{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: #4ef8cb;
+    border-radius: 50px;
+}
+.smile-leye{
+    position: absolute;
+    top: 140px;
+    left: 130px;
+    border: 5px solid;
+    border-radius: 50px;
+    background: #fff;
+}
+.smile-leye:after{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    content: "";
+    border: 15px solid;
+    border-radius: 50%;
+}
+.smile-reye{
+    position: absolute;
+    top: 140px;
+    left: 220px;
+    border: 5px solid;
+    border-radius: 50px;
+    background: #fff;
+}
+.smile-reye:after{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    content: "";
+    border: 15px solid;
+    border-radius: 50%;
+}
+.smile-mouse{
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    top: 200px;
+    left: 150px;
+    border: 5px solid #000;
+    border-top: none;
+    border-radius: 0 0 200px 200px;
+}
