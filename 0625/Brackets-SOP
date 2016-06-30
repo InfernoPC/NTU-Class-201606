@@ -7,27 +7,39 @@ Environment - windows
     3. use customize settings 
         3-1. download the settings at https://dl.dropboxusercontent.com/u/31101157/snippets-brackets.json to a folder
         3-2. use Emmet > Preference...
-        3-3. type the folder realted to 3-1
-    4. test 
-        4-1. open a existing folder
-        4-2. create a new file and save it with .html extension name
-        4-3. type "html:bs" then press tab
-        4-4. success if the following code is shown:
-            <html>
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
-                <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                <meta name="renderer" content="webkit">
-                <title>title</title>
-                <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-            </head>
-            <body>
-                <div class="container">bootstrap</div>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-                <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-            </body>
-            </html>
+        3-3. type the absolute folder path in 3-1
 
-Environment - ubuntu 14
-    ...
+Environment - ubuntu 14.04
+    1. install brackets by ppa
+        $sudo add-apt-repository ppa:webupd8team/brackets
+        $sudo apt-get update
+        $sudo apt-get install brackets
+    2. install three extentions:
+        2-1. Emmet - installed by searching
+        2-2. Custom Work - installed by searching
+        2-3. Beautify - install by URL: https://github.com/brackets-beautify/brackets-beautify/archive/master.zip
+    3. use customize settings 
+        3-1. download the settings at https://dl.dropboxusercontent.com/u/31101157/snippets-brackets.json to a folder
+        3-2. use Emmet > Preference...
+        3-3. type the absolute folder path in 3-1
+        
+test 
+    1. open a existing folder
+    2. create a new file and save it with .html extension name
+    3. type "html:bs" then press tab
+    4. success if the following code is shown:
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="renderer" content="webkit">
+            <title>title</title>
+            <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        </head>
+        <body>
+            <div class="container">bootstrap</div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        </body>
+        </html>
