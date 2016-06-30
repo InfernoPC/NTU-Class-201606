@@ -2,12 +2,11 @@
     box-sizing: border-box;
 }
 .iphonepng {
-/*    display: none;*/
     position: fixed;
     box-sizing: content-box;
     border: 5px solid;
     width: 400px;
-    opacity: 0.3;
+    //opacity: 0.3;
 }
 
 .iphonecss {
@@ -30,10 +29,10 @@
     position: absolute;
     border: 5px solid pink;
     border-radius: 60px;
-    left: 14px;
-    top: 5px;
-    width: 385px;
-    height: 780px;   
+    left: 16px;
+    top: 1px;
+    width: 382px;
+    height: 786px;   
 }
 
 .front-cam {
@@ -59,4 +58,112 @@
     left: 200px;
     border: 5px solid;
     border-radius: 50%;
+}
+
+.home-button {
+    position: absolute;
+    top: 705px;
+    left: 175px;
+    width: 62px;
+    height: 62px;
+    background: linear-gradient(to bottom right, black 0%, white 50%, black 100%);
+    border-radius: 50%;
+    
+}
+.home-button:after{
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    content: "";
+    background-color: white;
+    height: 57px;
+    width: 57px;
+    border-radius: 50%;
+    
+}
+
+.hide {
+    display: none;
+}
+
+.power {
+    position: absolute;
+    top: 102px;
+    left: 12px;
+    width: 6px;
+    height: 30px;
+    border: 2px solid pink;
+    border-radius: 5px 5px 5px 5px;
+    
+}
+
+.volume-up {
+    position: absolute;
+    top: 168px;
+    left: 13px;
+    width: 2px;
+    height: 60px;
+    border: 2px solid pink;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.volumne-down {
+    position: absolute;
+    top: 240px;
+    left: 13px;
+    width: 2px;
+    height: 60px;
+    border: 2px solid pink;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.right-button {
+    position: absolute;
+    top: 170px;
+    left: 396px;
+    width: 2px;
+    height: 58px;
+    border: 2px solid pink;
+    border-radius: 5px 5px 5px 5px;
+    
+}
+
+.antenna-ld {
+    position: absolute;
+    top: 714px;
+    left: 14px;
+    width: 9px;
+    height: 12px;
+    border: 5px solid white;
+    opacity: 0.8;
+}
+
+.antenna-lr {
+    position: absolute;
+    top: 714px;
+    left: 388px;
+    width: 9px;
+    height: 12px;
+    border: 5px solid white;
+    opacity: 0.8;
+}
+
+.antenna-ul {
+    position: absolute;
+    top: 60px;
+    left: 14px;
+    width: 9px;
+    height: 12px;
+    border: 5px solid white;
+    opacity: 0.8;
+}
+
+.antenna-ur {
+    position: absolute;
+    top: 60px;
+    left: 388px;
+    width: 9px;
+    height: 12px;
+    border: 5px solid white;
+    opacity: 0.8;
 }
