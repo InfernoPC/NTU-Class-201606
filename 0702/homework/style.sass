@@ -1,0 +1,35 @@
+@import "smile-face"
+
+$gray-base: #000
+$highlight-color: #abcabc
+$highlight-border: 5px solid $highlight-color
+$highlight-color: #000
+*
+  box-sizing: border-box
+  //padding: 5px
+h1
+  text-align: center
+  color: $gray-base
+  background: #ddd
+div
+  border: 1px solid $gray-base
+.nest-try
+  width: 100px
+  height: 100px
+  background-color: $highlight-color
+  border: $highlight-border
+.var-try
+  width: 100px
+  height: 100px
+.ori-try
+  height: 50px
+  border-width: 5px
+  background-color: #789987
+.extend-try
+  @extend .ori-try
+  border-style: dashed
+  
+.smile-face
+  @include smileface(300px, 300px, 50px)
+.smile-face2
+  @include smileface(200px, 200px, 30px)

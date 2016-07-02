@@ -1,0 +1,39 @@
+
+$eye-border: 5px
+@mixin circle($x, $y, $r)
+  position: absolute
+  width: $r*2
+  height: $r*2
+  border: $eye-border solid #000
+  border-radius: 50%
+  background: #fff
+  left: $x - $r
+  top: $y - $r
+  &:after
+    position: absolute
+    content: ""
+    top: -$eye-border + $r/4
+    left: -$eye-border + $r/4
+    border: $r*3/4 solid #000
+    border-radius: 50%
+   
+@mixin smileface($height, $width, $eye-size)
+  position: relative
+  width: $width
+  height: $height
+  background: #4ef8cb
+  border-radius: 20%
+  .smile-leye
+    @include circle($width/4, $height/3, $eye-size)
+  .smile-reye
+    @include circle($width*3/4, $height/3, $eye-size)
+  .smile-mouse
+    position: absolute
+    height: $height/4
+    width: $width/2
+    top: $height*5/8
+    left: $width/4
+    border: 5px solid #000
+    border-top: none
+    border-radius: 0 0 $height/2 $height/2
+  

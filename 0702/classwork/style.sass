@@ -1,0 +1,62 @@
+$gray-base: #000
+$highlight-color: #abcabc
+$highlight-border: 5px solid $highlight-color
+$highlight-color: #000
+*
+  box-sizing: border-box
+  //padding: 5px
+h1
+  text-align: center
+  color: $gray-base
+  background: #ddd
+div
+  border: 1px solid $gray-base
+.nest-try
+  width: 100px
+  height: 100px
+  background-color: $highlight-color
+  border: $highlight-border
+.var-try
+  width: 100px
+  height: 100px
+.ori-try
+  height: 50px
+  border-width: 5px
+  background-color: #789987
+.extend-try
+  @extend .ori-try
+  border-style: dashed
+  
+$eye-border: 5px
+@mixin circle($x, $y, $r)
+  position: absolute
+  width: $r*2
+  height: $r*2
+  border: $eye-border solid #000
+  border-radius: 50%
+  background: #fff
+  left: $x - $r
+  top: $y - $r
+  &:after
+    position: absolute
+    content: ""
+    top: -$eye-border + $r/4
+    left: -$eye-border + $r/4
+    border: $r*3/4 solid #000
+    border-radius: 50%
+   
+  
+  
+.smile-face
+  position: relative
+  width: 300px
+  height: 300px 
+
+.smile-mouse
+  width: 100px
+  height: 100px
+.smile-leye
+  @include circle(100px, 100px, 30px)
+.smile-reye
+  @include circle(200px, 100px, 30px)
+  
