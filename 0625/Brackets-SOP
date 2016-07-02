@@ -6,7 +6,7 @@ Environment - windows
         2-3. Beautify - install by URL: https://github.com/brackets-beautify/brackets-beautify/archive/master.zip
     3. use customize settings 
         3-1. download the settings at https://dl.dropboxusercontent.com/u/31101157/snippets-brackets.json to a folder
-        3-2. use Emmet > Preference...
+        3-2. open Emmet > Preference...
         3-3. type the absolute folder path in 3-1
 
 Environment - ubuntu 14.04
@@ -20,8 +20,8 @@ Environment - ubuntu 14.04
         2-3. Beautify - install by URL: https://github.com/brackets-beautify/brackets-beautify/archive/master.zip
     3. use customize settings 
         3-1. download the settings at https://dl.dropboxusercontent.com/u/31101157/snippets-brackets.json to a folder
-        3-2. use Emmet > Preference...
-        3-3. type the absolute folder path in 3-1
+        3-2. open Emmet > Preference...
+        3-3. type the absolute folder path in 3-1, such as home/Username/FolderName/
         
 test 
     1. open a existing folder
