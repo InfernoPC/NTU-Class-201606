@@ -1,0 +1,34 @@
+Install Sass - Windows
+    1. install ruby by ruby-installer
+    2. install sass
+        $ gem install sass
+    3. install compass
+        $ gem install compass
+
+Install Sass - Ubuntu 14.04
+    1. install rvm
+        $ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+        $ \curl -sSL https://get.rvm.io | bash -s stable
+    2. restart the terminal
+    3. install latest ruby by rvm
+        $ rvm install ruby
+    4. use ruby (suppose the latest version of ruby is 2.3.0)
+        $ rvm --default use 2.3.0
+    5. install sass
+        $ gem install sass
+    6. install compass
+        $ gem install compass
+Test
+    1. test rvm
+        $ rvm -v
+        1-1. if not work try restart the termainal
+        1-2. for some case go to Edit > Profile Preferences, Title and Command tag, and check the Run command as a login shell
+    2. test ruby
+        $ ruby -v
+        2-1. if not work try rvm use
+    3. test sass
+        $ sass -v
+        3-1. if not work look up the install log for error message
+    4. test compass
+        $ compass -v
+        4-1. if not work look up the install log for error message
