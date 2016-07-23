@@ -44,12 +44,13 @@ $( document ).ready(function() {
       $(".page-left2").animateRotate(80, 55, 500, 'linear');
       $(".page-left2").addClass("page-left1").removeClass("page-left2");
 
-      var $newPage = $("<div></div>").addClass("page page-left2");
+      
       if(index-3 >= 0){
+        var $newPage = $("<div></div>").addClass("page page-left2");
         $newPage.css('background-image', "url(" + images[index-3] + ")");
+        $newPage.insertBefore(".page-left1");
       }
       index -= 1;
-      $newPage.insertBefore(".page-left1");
       $('.page-no').text( index+1 + ' / ' + images.length);
 
     }
@@ -71,12 +72,12 @@ $( document ).ready(function() {
       $(".page-right2").animateRotate(-80, -55, 500, 'linear');
       $(".page-right2").addClass("page-right1").removeClass("page-right2");
 
-      var $newPage = $("<div></div>").addClass("page page-right2");
-      if(index+3 <= images.length){
+      if(index+3 <= images.length-1){
+        var $newPage = $("<div></div>").addClass("page page-right2");
         $newPage.css('background-image', "url(" + images[index+3] + ")");
+        $newPage.insertBefore(".page-right1");
       }
       index += 1;
-      $newPage.insertBefore(".page-right1");
       $('.page-no').text( index+1 + ' / ' + images.length);
       
     }
